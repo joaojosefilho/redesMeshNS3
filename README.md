@@ -1,10 +1,10 @@
-# Execução altomática das simulações
+# Execução automática das simulações
 
 ## É necessário instalar o python 3
 
 https://docs.python-guide.org/starting/install3/linux/
 
-## Simulações altomáticas da avaliação 2
+## Simulações automáticas da avaliação 2
 
 + copie a pasta 'avaliacao2' para dentro da sua pasta ns-3.x(Paste onde é exucutado o comando ./waf) (ex: home/joaojosefilho/NS3.27/ns-3-allinone/ns-3.27$).  
 + copie o arquivo 'mesh-2018-avaliacao2.cc' para dentro da sua pasta 'scratch' que fica dentro da pasta ns-3.x(Paste onde é exucutado o comando ./waf).  
@@ -57,7 +57,7 @@ Nº de saltos | 64B | 128B | 512B | 1024B
 Se quiser executar a simulação novamente, é necessário apagar os arquivos csv dentro das pastas 01,001 e 0001
 ```
 
-## Simulações altomáticas da avaliação 3
+## Simulações automáticas da avaliação 3
     
 + copie a pasta 'avaliacao3' para dentro da sua pasta ns-3.x(Paste onde é exucutado o comando ./waf) (ex: home/joaojosefilho/NS3.27/ns-3-allinone/ns-3.27$).  
 + copie o arquivo 'mesh-2018-avaliacao3.cc' para dentro da sua pasta 'scratch' que fica dentro da pasta ns-3.x(Paste onde é exucutado o comando ./waf).  
