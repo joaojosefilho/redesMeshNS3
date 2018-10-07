@@ -32,6 +32,7 @@ O protocolo que a professora Carina utilizou só permite até 32 saltos
 
 ### Execução:
 
+``` bash
 Vá para pasta onde o scripty avaliacao2.py está.  
 Para executar o scripty python utilize o seguinte comando:  
 $ ./avaliacao2.py
@@ -41,7 +42,7 @@ $ chmod 777 avaliacao3.py
 
 Quando o comando for finalizado, as pastas 01, 001 e 0001 vão conter arquivos csv que contém os resultados das simulações. Os arquivos não contem os cabeçalhos das linhas e colunas
 
-**Cabeçalhos:**
+Cabeçalhos:  
 Nº de saltos | 64B | 128B | 512B | 1024B
 ------------ | --- | ---- | ---- | -----
 5            |     |      |      |
@@ -53,3 +54,4 @@ Nº de saltos | 64B | 128B | 512B | 1024B
 32           |     |      |      |
 
 Se quiser executar a simulação novamente, é necessário apagar os arquivos csv dentro das pastas 01,001 e 0001
+```
