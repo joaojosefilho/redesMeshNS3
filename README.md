@@ -40,7 +40,8 @@ $ ./avaliacao2.py
 Se der permissão negada use o camando:  
 $ chmod 777 avaliacao3.py
 
-Quando o comando for finalizado, as pastas 01, 001 e 0001 vão conter arquivos csv que contém os resultados das simulações. Os arquivos não contem os cabeçalhos das linhas e colunas
+Quando o comando for finalizado, as pastas 01, 001 e 0001 vão conter arquivos csv que contém os resultados das simulações.  
+Os arquivos não contem os cabeçalhos das linhas e colunas
 
 Cabeçalhos:  
 Nº de saltos | 64B | 128B | 512B | 1024B
@@ -54,4 +55,48 @@ Nº de saltos | 64B | 128B | 512B | 1024B
 32           |     |      |      |
 
 Se quiser executar a simulação novamente, é necessário apagar os arquivos csv dentro das pastas 01,001 e 0001
+```
+
+## Simulações altomáticas da avaliação 3
+    
++ copie a pasta 'avaliacao3' para dentro da sua pasta ns-3.x(Paste onde é exucutado o comando ./waf) (ex: home/joaojosefilho/NS3.27/ns-3-allinone/ns-3.27$).  
++ copie o arquivo 'mesh-2018-avaliacao3.cc' para dentro da sua pasta 'scratch' que fica dentro da pasta ns-3.x(Paste onde é exucutado o comando ./waf).  
++ copie o arquivo avaliaco3.py para dentro da sua pasta ns-3.x(Paste onde é exucutado o comando ./waf).
+
+### Descrição dos arquivos
+
+**Pasta 'avaliacao3':** Dentro dessa pasta existem três outras pastas: 01, 001 e 0001(Referêntes ao intervalo entre o envio dos pacotes). Dentro de cada uma dessas pastas, vão ser criados 5 arquivos csv: fluxo.csv, taxaEntrega.csv, vazao.csv, atrasoMedio.csv(Delay Mean), variacaoAtraso.csv(Jitter). Esses arquivos vão armazenar os resultados das simulações. 
+
+**calcularMedia.py:** Esse scripty está presente nas pastas 01, 001 e 0001 e é responsável por calcular as médias. Vão ser gerados 4 arquivos csv: mediaTaxaEntrega.csv, mediaVazao.csv, mediaAtrasoMedio.csv(Delay Mean), mediaVariacaoAtraso.csv(Jitter). Esses 5 arquivos vão armazenas as médias.
+
+**Arquivo 'mesh-2018-avaliacao3.cc':** arquivo da professora Carina apresentando algumas modificação no código para escrever em um arquivo csv.
+
+**Arquivo'avaliaco3':** scripty em python para executar altomaticamente os comandos ./waf. Dentro Desse arquivo existem três listas, que representão os valores que seram modificados ao decorrer dos comandos ./waf. Atibutos como --y-size=4 --x-size=4 são fixos, por isso não foi necessário fazer listas.
+
+listFlows = ['1','2','3','4','5'] //Fluxos  
+listIntevals = ['0.1','0.01','0.001'] //packetInterval  
+listPacketSize = ['64','128','512','1024'] //packetSize
+
+### Execução:
+
+``` bash
+Vá para pasta onde o scripty avaliacao3.py está.
+
+Para executar o scripty python utilize o seguinte comando:  
+$ ./avaliacao3.py
+
+Se der permissão negada use o camando:  
+$ chmod 777 avaliacao3.py
+
+Quando o comando for finalizado, as pastas 01, 001 e 0001 vão conter arquivos csv que contém os resultados das simulações.  
+Dentro de cada uma dessas pastas, existe um scripty chamado de calcularMedia.py que vai calcular as médias das simulações.  
+
+Para executar o scripty python utilize o seguinte comando:  
+$ ./calcularMedia.py
+
+Se der permissão negada use o camando:  
+$ chmod 777 calcularMedia.py
+
+Se quiser executar a simulação novamente, é necessário apagar os arquivos csv dentro das pastas 01,001 e 0001.  
+Não apagar calcularMedia.py.
 ```
