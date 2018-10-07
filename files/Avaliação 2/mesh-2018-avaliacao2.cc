@@ -448,7 +448,7 @@ MeshAulaRPG::Run ()
             //std::cout << "  JitterSum:                   " << i->second.jitterSum.GetSeconds()<< " s\n";
             //out<<"  JitterSum:                   " << i->second.jitterSum.GetSeconds()<< " s\n";
             //std::cout << "  JitterMean:                  " << (i->second.jitterSum.GetSeconds()) / (i->second.rxPackets -1)<< " s\n";
-            out<<"  JitterMean:                  " << (i->second.jitterSum.GetSeconds()) / (i->second.rxPackets -1)<< " s\n";
+            //out<<"  JitterMean:                  " << (i->second.jitterSum.GetSeconds()) / (i->second.rxPackets -1)<< " s\n";
             //std::cout << "  TimeFirstTxPacket:           " << i->second.timeFirstTxPacket.GetSeconds() << " s\n";
             //out<<"  TimeFirstTxPacket:           " << i->second.timeFirstTxPacket.GetSeconds() << " s\n";
             //std::cout << "  TimeLastTxPacket:            " << i->second.timeLastTxPacket.GetSeconds() << " s\n";
