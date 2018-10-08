@@ -31,7 +31,10 @@ for arquivo in range(len(leitura)):
         linha.append(celula)
         for cell in dataset[x]:            
             if(cell != ''):
-                number = float(cell)                
+                if(cell == '-nan'):
+                    number = 0.0
+                else:
+                    number = float(cell)                                         
                 if(aux < agrupamento[x]):                                    
                     media = media + number
                     aux = aux + 1                    
@@ -52,3 +55,5 @@ for arquivo in range(len(leitura)):
 
     fin.close()
     fout.close()
+print('Arquivos gerados com sucesso!')    
+
