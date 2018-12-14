@@ -18,9 +18,9 @@ https://docs.python-guide.org/starting/install3/linux/
 
 **Arquivo 'avaliaco1.py':** scripty em python para executar altomaticamente os comandos ./waf. Dentro Desse arquivo existem três listas, que representão os valores que seram modificados ao decorrer dos comandos ./waf. Os Atributos --y-size=1 e --x-size=2 são fixos, por isso não foi necessário fazer listas.
 
-listIntevals = ['0.1','0.01','0.001']
-listPacketSize = ['64','128','512','1024']
-listSteps = ['10','20','30','40','50','60','70','80','90','95','96','98','100','101','102','103','104','105']
+listIntevals = ['0.1','0.01','0.001']  
+listPacketSize = ['64','128','512','1024']  
+listSteps = ['10','20','30','40','50','60','70','80','90','95','96','98','100','101','102','103','104','105']  
 
 ### Execução:
 
