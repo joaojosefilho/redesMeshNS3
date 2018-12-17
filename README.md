@@ -35,27 +35,31 @@ $ chmod 777 avaliacao1.py
 Quando o comando for finalizado, as pastas 01, 001 e 0001 vão conter arquivos csv que contém os resultados das simulações.  
 Os arquivos csv não contem os cabeçalhos das linhas e colunas. Abaixo estará o cabeçalho
 
-Cabeçalho:  
-Distância | 64B | 128B | 512B | 1024B
-----------| --- | ---- | ---- | -----
-10        |     |      |      |
-20        |     |      |      |
-30        |     |      |      |
-40        |     |      |      |
-50        |     |      |      |
-60        |     |      |      |
-70        |     |      |      |
-80        |     |      |      |
-90        |     |      |      |
-95        |     |      |      |
-96        |     |      |      |
-98        |     |      |      |
-100       |     |      |      |
-101       |     |      |      |
-102       |     |      |      |
-103       |     |      |      |
-104       |     |      |      |
-105       |     |      |      |
+Cabeçalho: 
+---------- --------------------------
+          |     Tamanho do pacote     |
+---------- --------------------------         
+Distância | 64B | 128B | 512B | 1024B |
+----------| --- | ---- | ---- | ----- |
+10        |     |      |      |       |
+20        |     |      |      |       |
+30        |     |      |      |       |
+40        |     |      |      |       |
+50        |     |      |      |       |
+60        |     |      |      |       |
+70        |     |      |      |       |
+80        |     |      |      |       |
+90        |     |      |      |       |
+95        |     |      |      |       |
+96        |     |      |      |       |
+98        |     |      |      |       |
+100       |     |      |      |       |
+101       |     |      |      |       |
+102       |     |      |      |       |
+103       |     |      |      |       |
+104       |     |      |      |       |
+105       |     |      |      |       |
+---------------------------------------
 
 Se quiser executar a simulação novamente, é necessário apagar os arquivos csv dentro das pastas 01,001 e 0001
 ```
